@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackcode.sda_project.ui.StudentCourseUIController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FBFBFB;">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackClick" style="-fx-background-color: #648DE5;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="307.0" layoutY="6.0" text="Enroll Course" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="courseTable" layoutX="44.0" layoutY="249.0" prefHeight="309.0" prefWidth="711.0">
+              <columns>
+                <TableColumn fx:id="codeCol" prefWidth="75.0" text="Code" />
+                <TableColumn fx:id="courseCol" prefWidth="229.5999755859375" text="Course" />
+                  <TableColumn fx:id="credithourCol" prefWidth="85.60003662109375" text="Credit Hours" />
+                  <TableColumn fx:id="descriptionCol" prefWidth="319.99993896484375" text="Description" />
+              </columns>
+            </TableView>
+            <ChoiceBox fx:id="courseDropdown" layoutX="314.0" layoutY="121.0" prefHeight="30.0" prefWidth="173.0" />
+            <Label layoutX="314.0" layoutY="100.0" text="Select Course" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="enrollButton" layoutX="314.0" layoutY="176.0" mnemonicParsing="false" onAction="#onEnrollClick" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #648DE5;" text="Enroll" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

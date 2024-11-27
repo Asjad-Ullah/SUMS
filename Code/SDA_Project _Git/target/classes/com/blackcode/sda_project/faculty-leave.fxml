@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackcode.sda_project.ui.FacultyLeaveUIController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FBFBFB;">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackClick" style="-fx-background-color: #648DE5;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="360.0" layoutY="21.0" text="Leave" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="85.0" text="Reason" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reasonText" layoutX="64.0" layoutY="106.0" prefHeight="25.0" prefWidth="230.0" />
+            <Label layoutX="64.0" layoutY="153.0" text="Days" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="daysText" layoutX="64.0" layoutY="174.0" prefHeight="25.0" prefWidth="230.0" />
+            <DatePicker fx:id="datepicker" layoutX="538.0" layoutY="106.0" />
+            <Label layoutX="538.0" layoutY="85.0" text="Start Date" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="requestButton" layoutX="538.0" layoutY="172.0" mnemonicParsing="false" onAction="#onRequestClick" prefHeight="30.0" prefWidth="175.0" style="-fx-background-color: #648DE5;" text="Request" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="leaveTable" layoutX="64.0" layoutY="250.0" prefHeight="302.0" prefWidth="655.0">
+              <columns>
+                <TableColumn fx:id="reasonCol" prefWidth="308.0000305175781" text="Reason" />
+                <TableColumn fx:id="startdateCol" prefWidth="123.99996948242188" text="Start Date" />
+                  <TableColumn fx:id="daysCol" prefWidth="112.0" text="Days" />
+                  <TableColumn fx:id="statusCol" prefWidth="111.19989013671875" text="Status" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackcode.sda_project.ui.StudentAttendanceUIController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FBFBFB;">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackClick" style="-fx-background-color: #648DE5;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="318.0" layoutY="21.0" text="Attendance" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="attendanceTable" layoutX="39.0" layoutY="134.0" prefHeight="436.0" prefWidth="714.0">
+              <columns>
+                <TableColumn fx:id="courseCol" prefWidth="239.20001220703125" text="Course" />
+                <TableColumn fx:id="statusCol" prefWidth="225.5999755859375" text="Status" />
+                  <TableColumn fx:id="dateCol" prefWidth="250.40008544921875" text="Date" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackcode.sda_project.ui.AdminDashboardUIController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FBFBFB;">
+         <children>
+            <Label layoutX="251.0" layoutY="14.0" text="Admin Dashboard" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Pane layoutX="132.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #648DE5;">
+               <children>
+                  <Button fx:id="registrationButton" layoutY="55.0" mnemonicParsing="false" onAction="#onRegistrationClick" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #648DE5;" text="Registration" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/image%20(3).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="241.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #648DE5;">
+               <children>
+                  <Button fx:id="examButton" layoutY="55.0" mnemonicParsing="false" onAction="#onExamClick" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #648DE5;" text="Exam&#10;Schedule" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/image%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="350.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #648DE5;">
+               <children>
+                  <Button fx:id="classButton" layoutY="55.0" mnemonicParsing="false" onAction="#onClassClick" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #648DE5;" text="Class&#10;Schedule" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/image%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="459.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #648DE5;">
+               <children>
+                  <Button fx:id="leaveButton" layoutY="54.0" mnemonicParsing="false" onAction="#onLeaveClick" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #648DE5;" text="Leave&#10;Management" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/image%20(8).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="568.0" layoutY="250.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #648DE5;">
+               <children>
+                  <Button fx:id="logoutButton" layoutY="54.0" mnemonicParsing="false" onAction="#onLogoutClick" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #648DE5;" text="Log Out&#10;&#10;" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/image%20(5).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</VBox>
