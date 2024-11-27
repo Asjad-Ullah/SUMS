@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="loginwindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackcode.sda_project.ui.LoginUIController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FBFBFB;">
+         <children>
+            <TextField fx:id="emailText" layoutX="435.0" layoutY="229.0" prefHeight="30.0" prefWidth="313.0" />
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="573.0" prefWidth="374.0" style="-fx-background-color: #648DE5; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="286.0" fitWidth="309.0" layoutX="44.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/books.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="435.0" layoutY="76.0" text="WELCOME BACK" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="501.0" layoutY="121.0" text="Log in to your account" textAlignment="CENTER" textFill="#aeaeae">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="435.0" layoutY="202.0" text="Email" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="435.0" layoutY="274.0" text="Password" textFill="#648de5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordText" layoutX="435.0" layoutY="301.0" prefHeight="30.0" prefWidth="313.0" />
+            <Button fx:id="loginButton" layoutX="435.0" layoutY="369.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="27.0" prefWidth="313.0" style="-fx-background-color: #648de5;" text="Log in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>
